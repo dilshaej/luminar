@@ -1,0 +1,32 @@
+a {
+    position: relative;
+    text-decoration: none;
+    color: #333; /* Default color */
+  }
+  
+  a::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px; /* Adjust the height of the underline */
+    background-color: rgb(124, 29, 112); /* Color of the underline */
+    transition: transform 0.3s ease-in-out;
+    transform: scaleX(0); /* Initial state: no underline */
+  }
+  
+  a:hover::before {
+    transform: scaleX(1); /* Final state: full underline on hover */
+  }
+  
+.large-link {
+    font-size: 20px; /* Change the size to your desired value */
+    /* Other styles */
+  }
+  
+  
+
+
+
+  
